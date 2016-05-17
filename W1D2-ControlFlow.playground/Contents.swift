@@ -9,6 +9,7 @@
 
 var bicycleCount = 100
 
+
 //: Now we want to print out a description of the number of bicycles we have:
 
 print("There are \(bicycleCount) bicycles")
@@ -49,7 +50,11 @@ if someThing == otherThing {
 
 bicycleCount = 1
 
-
+if bicycleCount == 1 {
+    print("there is \(bicycleCount) bicycle")
+} else {
+    print("there are \(bicycleCount) bicycles")
+}
 
 
 //: ### Challenge 2
@@ -58,7 +63,13 @@ bicycleCount = 1
 
 bicycleCount = 0
 
-
+if bicycleCount == 1 {
+    print("there is \(bicycleCount) bicycle")
+} else if bicycleCount == 0 {
+    print ("there are zero bicycles")
+} else {
+    print("there are \(bicycleCount) bicycles")
+}
 
 
 
@@ -68,10 +79,33 @@ bicycleCount = 0
 
 var inputString = "Do you like bicycles?"
 
+if inputString.hasSuffix("?") {
+    print("I think so!")
+} else {
+    print("you don't say!")
+}
 
 
 
+var motherString = "? do you like it"
 
+if motherString.hasPrefix("?") {
+    print("wrong place for a ? buddy")
+} else {
+    print("of course!")
+}
+
+
+
+var testString = "? do you like it"
+
+if testString.hasPrefix("?") {
+    print("wrong place for a ? buddy")
+} else if testString == "do you like it" {
+    print("wheres the ?")
+} else {
+    print("right place for the ?!")
+}
 
 
 //: THE END
